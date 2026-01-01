@@ -1,0 +1,39 @@
+﻿<section class="login-wrapper">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-8">
+                <div class="login-card text-center">
+                    <h2 class="section-title">Welcome Back</h2>
+                    <p class="subtitle">Enter your credentials to access your gallery.</p>
+
+                    <form action="login_process.php" method="POST" class="text-start">
+                        <div class="mb-4">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter Your Email"
+                                   required>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <label class="form-label">Password</label>
+                            </div>
+                            <input type="password" name="password" class="form-control"
+                                   placeholder="Enter Your Password" required>
+                        </div>
+
+
+
+                        <button type="submit" class="btn btn-login">LOGIN</button>
+
+                        <p class="text-center mt-4 small ">
+                            NEW TO ARTMART? <a asp-controller="Home" asp-action="Signup" class=" yt text-danger fw-bold">
+                                CREATE
+                                ACCOUNT
+                            </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

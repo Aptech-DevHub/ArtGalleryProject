@@ -1,0 +1,88 @@
+﻿<section class="registration-wrapper">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-9 col-md-11">
+                <div class="reg-card">
+                    <h2 class="section-title">Join Artmart Community</h2>
+
+                    <form action="register.php" method="POST">
+                        <div class="row g-4">
+                            <!-- Full Name -->
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Enter your Name"
+                                       required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" name="email" class="form-control" placeholder="Enter your Email"
+                                       required>
+                            </div>
+
+                            <!-- Age -->
+                            <div class="col-md-4">
+                                <label class="form-label">Age</label>
+                                <input type="number" name="age" class="form-control" placeholder="Enter your Age">
+                            </div>
+
+                            <!-- Gender -->
+                            <div class="col-md-4">
+                                <label class="form-label">Gender</label>
+                                <select name="gender" class="form-select form-control">
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Register As -->
+                            <div class="col-md-4">
+                                <label class="form-label">Register As</label>
+                                <select name="user_role" id="roleSelect" class="form-select form-control"
+                                        onchange="toggleArtistFields()">
+                                    <option value="customer" selected>Customer</option>
+                                    <option value="artist">Artist</option>
+                                </select>
+                            </div>
+
+                            <!-- Artist Fields -->
+                            <div id="artistFields" class="col-md-12" style="display: none;">
+                                <h6 class="text-danger mb-3">Artist Profile Details</h6>
+                                <div class="mb-3">
+                                    <label class="form-label">Art Category / Interests</label>
+                                    <input type="text" name="interest" class="form-control"
+                                           placeholder="e.g. Sculptures, Paintings">
+                                </div>
+                                <div>
+                                    <label class="form-label">Short Bio</label>
+                                    <textarea name="bio" class="form-control" rows="3"
+                                              placeholder="Tell us about your artistic journey..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="col-md-12">
+                                <label class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control"
+                                       placeholder="Create a strong password" required>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-register">REGISTER NOW</button>
+                                <p class="text-center mt-4">
+                                    Already have an account? <a asp-controller="Home" asp-action="Login"
+                                                                class=" yt text-blacK fw-bold">Login</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

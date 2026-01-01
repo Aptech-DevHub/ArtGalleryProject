@@ -1,0 +1,90 @@
+    /* Color Palette */
+        :root {
+            /* Electric Blue */
+            --bg-dark: #0a0a0a;
+            --card-bg: #111111;
+            --text-muted: #b0b0b0;
+        }
+
+        /* Background & Main Text */
+        .contact-section {
+            background-color: #fff !important;
+        }
+
+        .text-light-muted {
+            color: var(--text-muted);
+        }
+
+        /* Card Styling */
+        .border-glow {
+            border: 1px solid #222;
+            background:#fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: border 0.3s ease;
+        }
+
+
+
+        /* Input Fields */
+        .luxury-input {
+            background: #fff !important;
+            border: 1px solid #333 !important;
+            color: #000 !important;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+        }
+
+        .luxury-input:focus {
+            border-color: grey !important;
+            box-shadow: 0 0 10px rgba(13, 27, 30, 0.2) !important;
+            outline: none;
+        }
+
+        .luxury-input::placeholder {
+            color: #555;
+        }
+
+        /* Icon Box */
+        .icon-square {
+            width: 50px;
+            height: 50px;
+            /* background: rgba(0, 210, 255, 0.1); */
+            /* background: linear-gradient(45deg, #545757, #030303); */
+            background-color: #fff;
+            color:  #030303;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #000;
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Button Styling (Responsive & Attractive) */
+        .btn-luxury-submit {
+            background: linear-gradient(45deg, #545757, #030303);
+            color: #fff !important;
+            border: none;
+            padding: 15px;
+            border-radius: 25px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(13, 22, 25, 0.374);
+        }
+
+        .btn-luxury-submit:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.1);
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            .display-6 {
+                font-size: 1.8rem;
+            }
+
+            .form-card-dark {
+                padding: 1.5rem !important;
+            }
+        }

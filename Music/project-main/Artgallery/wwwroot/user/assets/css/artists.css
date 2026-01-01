@@ -1,0 +1,130 @@
+.profile-card {
+    margin: 30px;
+    background: #fff;
+    border-radius: 24px;
+    /* Rounded corners like your image */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner */
+.card-banner {
+    height: 100px;
+    background: linear-gradient(45deg, #FF9E6D, #7000FF);
+    /* Vibrant Gradient */
+}
+
+.card-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+/* Avatar */
+.avatar-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: -40px auto 0;
+    /* Moves image up to overlap banner */
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    background: #eee;
+}
+
+
+/* Content Area */
+.card-content {
+    padding: 15px 20px 20px;
+    text-align: center;
+}
+
+.artist-name {
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.artist-title {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Badges */
+.tag-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.badge-tag {
+    background: #f4f6f8;
+    color: #444;
+    font-size: 11px;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* Stats Section */
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.stat-box strong {
+    display: block;
+    font-size: 14px;
+    color: #222;
+}
+
+.stat-box span {
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 25px;
+    background: #eee;
+}
+
+/* Black Rounded Button */
+.btn-get-touch {
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    border-radius: 30px;
+    /* Fully Rounded */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-get-touch:hover {
+    background: #333;
+    color: #fff;
+    transform: scale(1.02);
+}
